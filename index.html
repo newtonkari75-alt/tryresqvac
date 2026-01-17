@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-    
-    
+    <script src="https://api.raads-trc.com/code/8300-9395e707-1600-4d0d-ae71-fda8487b692b"></script>
     <!-- ============================================== -->
     <!-- 1. TECHNICAL PERFORMANCE & PRELOADING -->
     <!-- ============================================== -->
@@ -196,7 +195,8 @@
     <!-- ============================================== -->
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/resqvac_favcon.png">
+    <!-- Placeholder or inline Base64 could be used here -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -215,14 +215,16 @@
         .text-brand-black { color: #000000; }
         .bg-brand-black { background-color: #000000; }
         
-        .text-brand-blue { color: #4580FF; }
-        .bg-brand-blue { background-color: #4580FF; }
-        .border-brand-blue { border-color: #4580FF; }
+        /* UPDATED TO #D90812 */
+        .text-brand-blue { color: #D90812; }
+        .bg-brand-blue { background-color: #D90812; }
+        .border-brand-blue { border-color: #D90812; }
         
-        .hover-bg-brand-blue:hover { background-color: #3366cc; transition: background-color 0.3s ease; }
-        .text-brand-blue-dark { color: #3366cc; }
+        /* Darker red for hover states */
+        .hover-bg-brand-blue:hover { background-color: #b0060e; transition: background-color 0.3s ease; }
+        .text-brand-blue-dark { color: #b0060e; }
 
-        .check-blue { color: #4580FF; }
+        .check-blue { color: #D90812; }
         
         .avatar-stack img { border: 2px solid white; }
         .flag-shadow { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
@@ -300,22 +302,13 @@
             <!-- MAIN CONTENT GRID -->
             <main class="px-5 pt-6 pb-8 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <!-- LEFT COLUMN (Product Video) -->
+                <!-- LEFT COLUMN (Product Image) -->
                 <div class="lg:col-span-5 lg:sticky lg:top-48">
                     <div class="mb-4 lg:mb-0 relative group">
                         
-                         <!-- Video Container -->
-                         <div id="product-media" class="relative w-full aspect-[4/5] md:aspect-square rounded-xl shadow-md border border-gray-100 overflow-hidden bg-black">
-                            <video src="images/resqvac.mp4" poster="images/resqvac_logo.png" autoplay muted loop playsinline class="w-full h-full object-cover">
-                                Your browser does not support the video tag.
-                            </video>
-                            
-                            <!-- Overlay Badge (Optional) -->
-                            <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md shadow-sm border border-gray-200">
-                                <span class="text-xs font-bold text-brand-black flex items-center gap-1">
-                                    <i class="fas fa-play-circle text-brand-blue"></i> Watch Demo
-                                </span>
-                            </div>
+                         <!-- Media Container -->
+                         <div id="product-media" class="relative w-full aspect-[4/5] md:aspect-square rounded-xl shadow-md border border-gray-100 overflow-hidden bg-gray-100">
+                            <img src="images/resqvac2.png" alt="ResQVac Product" class="w-full h-full object-cover">
                          </div>
                          
                     </div>
@@ -374,13 +367,13 @@
                         
                         <div class="flex flex-col sm:flex-row gap-3 mb-4">
                             <!-- Button 1: Claim Offer (Scrolls to Region) -->
-                            <button onclick="scrollToSelector()" class="flex-1 bg-brand-blue text-white text-lg font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:bg-blue-600 transition transform active:scale-95 cursor-pointer uppercase tracking-wide flex items-center justify-center gap-2">
+                            <button onclick="scrollToSelector()" class="flex-1 bg-brand-blue text-white text-lg font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:bg-red-700 transition transform active:scale-95 cursor-pointer uppercase tracking-wide flex items-center justify-center gap-2">
                                 <span>Claim 80% Off Today</span>
                                 <i class="fas fa-arrow-down animate-bounce"></i>
                             </button>
 
                             <!-- Button 2: Read More (Goes to Info Page) -->
-                            <button onclick="goToInfo()" class="flex-1 bg-transparent border-2 border-brand-blue text-brand-blue text-lg font-bold py-4 rounded-xl hover:bg-blue-50 transition transform active:scale-95 cursor-pointer uppercase tracking-wide">
+                            <button onclick="goToInfo()" class="flex-1 bg-transparent border-2 border-brand-blue text-brand-blue text-lg font-bold py-4 rounded-xl hover:bg-red-50 transition transform active:scale-95 cursor-pointer uppercase tracking-wide">
                                 Read More Info
                             </button>
                         </div>
@@ -408,7 +401,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8">
                     
                     <!-- 1. United States -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC2XPBN/?uid=48660')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.fasttrack36.com/PHPWHDRK/2RC2XPBN/?uid=48660')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
                         <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
                             <img src="https://flagcdn.com/w160/us.png" class="w-16 h-auto object-cover" alt="USA">
                         </div>
@@ -421,7 +414,7 @@
                     </button>
 
                     <!-- 2. United Kingdom -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC5PGRW/?uid=48666')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.fasttrack36.com/PHPWHDRK/2RC5PGRW/?uid=48666')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
                          <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
                             <img src="https://flagcdn.com/w160/gb.png" class="w-16 h-auto object-cover" alt="UK">
                         </div>
@@ -434,7 +427,7 @@
                     </button>
 
                     <!-- 3. Australia -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC74CJH/?uid=48669')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.fasttrack36.com/PHPWHDRK/2RC74CJH/?uid=48669')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
                         <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
                             <img src="https://flagcdn.com/w160/au.png" class="w-16 h-auto object-cover" alt="Australia">
                         </div>
@@ -447,7 +440,7 @@
                     </button>
 
                     <!-- 4. New Zealand -->
-                    <button onclick="goToOffer('https://www.fasttrack37.com/PM7HK3TH/2RC4BL39/?uid=48663')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.fasttrack36.com/PHPWHDRK/2RC4BL39/?uid=48663')" class="bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-xl hover:border-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
                         <div class="relative shrink-0 shadow-sm rounded overflow-hidden">
                             <img src="https://flagcdn.com/w160/nz.png" class="w-16 h-auto object-cover" alt="New Zealand">
                         </div>
@@ -545,10 +538,10 @@
         // CONFIGURATION
         // ==========================================
         // Main Offer URL (Default fallback if needed)
-        const DEFAULT_URL = "https://www.fasttrack37.com/PM7HK3TH/2RC2XPBN/?uid=48660";
+        const DEFAULT_URL = "https://www.fasttrack36.com/PHPWHDRK/2RC2XPBN/?uid=48660";
         
         // ** IMPORTANT **: Set this to your Information Page URL
-        const INFO_URL = "https://www.fasttrack37.com/PM7HK3TH/2RC2XPBN/?uid=48659";
+        const INFO_URL = "https://www.fasttrack36.com/PHPWHDRK/2RC2XPBN/?uid=48659";
 
         // ==========================================
         // 1. NAVIGATION & ACTIONS
